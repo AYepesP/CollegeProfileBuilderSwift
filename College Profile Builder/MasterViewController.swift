@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil

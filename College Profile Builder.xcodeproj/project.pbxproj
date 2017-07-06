@@ -15,6 +15,11 @@
 		A99B057A1F0D7176009D8D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99B05781F0D7176009D8D4D /* LaunchScreen.storyboard */; };
 		A99B05851F0D7176009D8D4D /* College_Profile_BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B05841F0D7176009D8D4D /* College_Profile_BuilderTests.swift */; };
 		A99B05901F0D7176009D8D4D /* College_Profile_BuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B058F1F0D7176009D8D4D /* College_Profile_BuilderUITests.swift */; };
+		A99B059F1F0D78CB009D8D4D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B059D1F0D78CB009D8D4D /* Realm.framework */; };
+		A99B05A01F0D78CB009D8D4D /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A99B059D1F0D78CB009D8D4D /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A99B05A11F0D78CB009D8D4D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B059E1F0D78CB009D8D4D /* RealmSwift.framework */; };
+		A99B05A21F0D78CB009D8D4D /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A99B059E1F0D78CB009D8D4D /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A99B05A51F0D7A88009D8D4D /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B05A41F0D7A88009D8D4D /* College.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A99B05A31F0D78CB009D8D4D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A99B05A21F0D78CB009D8D4D /* RealmSwift.framework in Embed Frameworks */,
+				A99B05A01F0D78CB009D8D4D /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A99B056A1F0D7176009D8D4D /* College Profile Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College Profile Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99B056D1F0D7176009D8D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,9 @@
 		A99B058B1F0D7176009D8D4D /* College Profile BuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "College Profile BuilderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99B058F1F0D7176009D8D4D /* College_Profile_BuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_Profile_BuilderUITests.swift; sourceTree = "<group>"; };
 		A99B05911F0D7176009D8D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99B059D1F0D78CB009D8D4D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		A99B059E1F0D78CB009D8D4D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		A99B05A41F0D7A88009D8D4D /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99B05A11F0D78CB009D8D4D /* RealmSwift.framework in Frameworks */,
+				A99B059F1F0D78CB009D8D4D /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,8 @@
 		A99B05611F0D7176009D8D4D = {
 			isa = PBXGroup;
 			children = (
+				A99B059D1F0D78CB009D8D4D /* Realm.framework */,
+				A99B059E1F0D78CB009D8D4D /* RealmSwift.framework */,
 				A99B056C1F0D7176009D8D4D /* College Profile Builder */,
 				A99B05831F0D7176009D8D4D /* College Profile BuilderTests */,
 				A99B058E1F0D7176009D8D4D /* College Profile BuilderUITests */,
@@ -101,6 +128,7 @@
 			children = (
 				A99B056D1F0D7176009D8D4D /* AppDelegate.swift */,
 				A99B056F1F0D7176009D8D4D /* MasterViewController.swift */,
+				A99B05A41F0D7A88009D8D4D /* College.swift */,
 				A99B05711F0D7176009D8D4D /* DetailViewController.swift */,
 				A99B05731F0D7176009D8D4D /* Main.storyboard */,
 				A99B05761F0D7176009D8D4D /* Assets.xcassets */,
@@ -138,6 +166,7 @@
 				A99B05661F0D7176009D8D4D /* Sources */,
 				A99B05671F0D7176009D8D4D /* Frameworks */,
 				A99B05681F0D7176009D8D4D /* Resources */,
+				A99B05A31F0D78CB009D8D4D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +294,7 @@
 				A99B05721F0D7176009D8D4D /* DetailViewController.swift in Sources */,
 				A99B05701F0D7176009D8D4D /* MasterViewController.swift in Sources */,
 				A99B056E1F0D7176009D8D4D /* AppDelegate.swift in Sources */,
+				A99B05A51F0D7A88009D8D4D /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +446,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "College Profile Builder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wooden.College-Profile-Builder";
@@ -428,6 +462,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "College Profile Builder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wooden.College-Profile-Builder";
